@@ -27,9 +27,18 @@ Install any CUDA-specific packages according to your local PyTorch and CUDA vers
 
 ## Dataset
 
-Prepare your anomaly detection dataset under `data/`, then generate or provide the corresponding `meta.json` file.
+The experiments use the following publicly available industrial anomaly detection datasets:
 
-For supported dataset formats and metadata examples, see `data/README.md`.
+- [MVTec AD](https://www.mvtec.com/research-teaching/datasets/mvtec-ad)
+- [VisA](https://registry.opendata.aws/visa/)
+- [MVTec LOCO AD](https://www.mvtec.com/research-teaching/datasets/mvtec-loco-ad)
+- [BTAD](https://datasetninja.com/btad) ([original VT-ADL repository](https://github.com/pankajmishra000/VT-ADL#beantech-anomaly-detection-dataset---btad))
+- [MPDD](https://github.com/stepanje/MPDD)
+- [Real-IAD](https://huggingface.co/datasets/Real-IAD/Real-IAD) ([project page](https://realiad4ad.github.io/Real-IAD/))
+
+This repository does not redistribute these third-party datasets. Download them from their original repositories and comply with their respective licenses and access conditions. Prepare each dataset under `data/`, then generate or provide the corresponding `meta.json` file.
+
+For download links, preparation instructions, supported dataset formats, and metadata examples, see [`data/README.md`](data/README.md).
 
 ## Training
 
